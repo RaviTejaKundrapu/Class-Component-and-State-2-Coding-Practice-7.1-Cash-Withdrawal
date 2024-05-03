@@ -1,0 +1,161 @@
+/* Write your CSS here */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.bank-img {
+  width: 280px;
+  height: 60px;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  overflow: auto;
+  height: 70%;
+  width: 96%;
+  background-color: #150b3e;
+  border-radius: 10px;
+  /* Add animated border properties */
+  border: 3px solid transparent;
+  animation: borderAnimation 4s infinite;
+}
+@keyframes borderAnimation {
+  0%,
+  100% {
+    border-color: rgb(254, 99, 99);
+  }
+  25% {
+    border-right-color: rgb(103, 103, 228);
+  }
+  50% {
+    border-bottom-color: rgb(252, 252, 56);
+  }
+  75% {
+    border-right-color: rgb(255, 183, 48);
+  }
+}
+/* --animated related up to here  */
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  margin: 10px;
+  /* border: 1px solid white; */
+}
+
+.profile {
+  background-color: #c7d2fe;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #7c3aed;
+  margin: 10px;
+}
+
+.profile-name {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 500;
+  color: #d4d2db;
+  margin-left: 10px;
+}
+
+.Balance-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid white; */
+  width: 95%;
+}
+
+.YourBalText {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  color: #7f75a5;
+}
+
+.amount-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.amount {
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 700;
+  color: #d4d2db;
+}
+
+.ruppes-text {
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 600;
+  color: #a399c7;
+}
+
+.withdraw-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 9px;
+  /* border: 1px solid white; */
+  padding: 8px;
+}
+
+.Withdrawtext {
+  font-family: 'Roboto';
+  font-size: 21px;
+  font-weight: 600;
+  color: #d4d2db;
+  margin: 6px;
+}
+
+.chooseAmount {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  color: #7f75a5;
+  margin: 6px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 91%;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 767px) {
+  .card-container {
+    width: 66%;
+    height: 49%;
+  }
+  .buttons-container {
+    width: 99%;
+  }
+}
